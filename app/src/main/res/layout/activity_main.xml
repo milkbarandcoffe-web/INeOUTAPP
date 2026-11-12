@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INOUT - Configurazione"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/etChiave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Chiave Personale Utente (es. KEY-8812)"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etScriptUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="URL Web App Google Apps Script"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/tvStatoTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nessun Tag associato"
+        android:textColor="#D32F2F"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnAssociaTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🔍 Associa questo Tag NFC"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnSalva"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salva Configurazione" />
+</LinearLayout>
